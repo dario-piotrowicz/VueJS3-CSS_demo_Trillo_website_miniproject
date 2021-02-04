@@ -31,6 +31,14 @@ html {
   padding: 0;
 }
 
+/*
+  Note:
+    The following is a good strategy if you want to have everything set up to have a default
+    box-sizing of border-box.
+    You set box-sizing: border-box to the root html element and inherit to all the other elements,
+    in this way every element gets border-box but it is still easy to change the box-sizing of
+    elements and have the change propagate to their children.
+*/
 *,
 *::before,
 *::after {
