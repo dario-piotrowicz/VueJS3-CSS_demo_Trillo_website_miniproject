@@ -42,15 +42,13 @@ html {
   font-weight: 400;
   line-height: 1.6;
 
+  color: var(--color-gray-darker);
+
   min-height: 100vh;
   background-image: linear-gradient(
     to right bottom,
     var(--color-primary-lighter),
     var(--color-primary-darker)
   );
-
-  h1 {
-    color: #fff;
-  }
 }
 </style>
