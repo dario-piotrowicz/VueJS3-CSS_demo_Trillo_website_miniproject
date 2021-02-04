@@ -11,6 +11,8 @@ export default {
 </script>
 
 <style lang="scss">
+@import "./variables.scss";
+
 html {
   box-sizing: border-box;
 
@@ -41,7 +43,7 @@ html {
   line-height: 1.6;
 
   h1 {
-    color: green;
+    color: var(--color-primary);
   }
 }
 </style>

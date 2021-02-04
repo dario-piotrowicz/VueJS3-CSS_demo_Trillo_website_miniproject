@@ -1,0 +1,13 @@
+/*
+  In this project we are using css variables instead of sass ones, this is just to
+  learn something new
+
+  Also css variables has two advantages over sass ones:
+   - they can be manipulated via the devtools
+   - they can be manipulated via javascript (using the setProperty function on the root styles)
+*/
+:root {
+  --color-primary: #eb2f64;
+  --color-primary-lighter: #ff3366;
+  --color-primary-darker: #ba265d;
+}
