@@ -3,6 +3,8 @@
 </template>
 
 <script>
+import "./assets/fonts/fonts.css";
+
 export default {
   name: "App"
 };
@@ -34,6 +36,10 @@ html {
 }
 
 #app {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+
   h1 {
     color: green;
   }
