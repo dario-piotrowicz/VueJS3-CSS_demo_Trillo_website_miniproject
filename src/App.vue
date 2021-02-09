@@ -1,12 +1,16 @@
 <template>
-  <h1>Trillo App</h1>
+  <app-container></app-container>
 </template>
 
 <script>
 import "./assets/fonts/fonts.css";
+import AppContainer from "./components/AppContainer";
 
 export default {
-  name: "App"
+  name: "App",
+  components: {
+    "app-container": AppContainer
+  }
 };
 </script>
 
