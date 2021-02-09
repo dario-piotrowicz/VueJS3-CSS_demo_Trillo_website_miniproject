@@ -30,4 +30,8 @@ export default {
   box-shadow: 0 2rem 6rem transparentize(#000, 0.7);
   min-height: 50rem;
 }
+
+.content {
+  display: flex;
+}
 </style>

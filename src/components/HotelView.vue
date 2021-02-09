@@ -7,5 +7,6 @@
 <style lang="scss" scoped>
 .hotel-view {
   background-color: #fff;
+  flex: 1;
 }
 </style>
