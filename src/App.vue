@@ -49,6 +49,14 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primary-lighter),
+    var(--color-primary-darker)
+  );
+}
+
 #app {
   font-family: "OpenSans", sans-serif;
   font-weight: 400;

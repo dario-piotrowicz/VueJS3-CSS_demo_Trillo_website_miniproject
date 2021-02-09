@@ -1,8 +1,10 @@
 <template>
-  <app-header></app-header>
-  <div class="content">
-    <nav-sidebar></nav-sidebar>
-    <hotel-view></hotel-view>
+  <div class="container">
+    <app-header></app-header>
+    <div class="content">
+      <nav-sidebar></nav-sidebar>
+      <hotel-view></hotel-view>
+    </div>
   </div>
 </template>
 
@@ -19,3 +21,13 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.container {
+  max-width: 120rem;
+  margin: 8rem auto;
+  background-color: var(--color-gray-lightest);
+  box-shadow: 0 2rem 6rem transparentize(#000, 0.7);
+  min-height: 50rem;
+}
+</style>
