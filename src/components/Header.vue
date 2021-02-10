@@ -1,6 +1,6 @@
 <template>
   <header class="header">
-    HEADER
+    <img src="../assets/img/logo.png" alt="trillo logo" class="logo" />
   </header>
 </template>
 
