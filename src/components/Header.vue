@@ -7,6 +7,30 @@
         search
       </button>
     </form>
+    <nav class="user-navigation">
+      <div class="user-navigation__item-wrapper">
+        <div class="user-navigation__icon">
+          bookmarks
+        </div>
+        <div class="user-navigation__notifications">7</div>
+      </div>
+      <div class="user-navigation__item-wapper">
+        <div class="user-navigation__icon">
+          chat
+        </div>
+        <div class="user-navigation__notifications">13</div>
+      </div>
+      <div class="user-navigation__item-wrapper">
+        <div class="user-navigation__user">
+          <img
+            src="../assets/img/user.jpg"
+            alt="user profile picture"
+            class="user-navigation__user-img"
+          />
+          <span class="user-navigation__user-name">Dario</span>
+        </div>
+      </div>
+    </nav>
   </header>
 </template>
 
