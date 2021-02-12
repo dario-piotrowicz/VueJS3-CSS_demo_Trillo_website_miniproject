@@ -1,14 +1,17 @@
 <template>
+  <svg-definitions></svg-definitions>
   <app-container></app-container>
 </template>
 
 <script>
 import "./assets/fonts/fonts.css";
+import SvgDefs from "./SvgDefs";
 import AppContainer from "./components/AppContainer";
 
 export default {
   name: "App",
   components: {
+    "svg-definitions": SvgDefs,
     "app-container": AppContainer
   }
 };
