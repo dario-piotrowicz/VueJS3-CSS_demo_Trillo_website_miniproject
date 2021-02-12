@@ -4,20 +4,22 @@
     <form action="#" class="search">
       <input type="text" class="search__input" placeholder="Search hotels" />
       <button class="search__button">
-        search
+        <svg class="search__button-icon">
+          <use xlink:href="#icon-magnifying-glass"></use>
+        </svg>
       </button>
     </form>
     <nav class="user-navigation">
       <div class="user-navigation__item-wrapper">
-        <div class="user-navigation__icon">
-          bookmarks
-        </div>
+        <svg class="user-navigation__icon">
+          <use xlink:href="#icon-bookmark"></use>
+        </svg>
         <div class="user-navigation__notifications">7</div>
       </div>
       <div class="user-navigation__item-wapper">
-        <div class="user-navigation__icon">
-          chat
-        </div>
+        <svg class="user-navigation__icon">
+          <use xlink:href="#icon-chat"></use>
+        </svg>
         <div class="user-navigation__notifications">13</div>
       </div>
       <div class="user-navigation__item-wrapper">
