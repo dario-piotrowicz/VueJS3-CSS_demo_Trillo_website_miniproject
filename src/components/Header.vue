@@ -42,4 +42,31 @@
   background-color: #fff;
   border-bottom: var(--color-gray-lighter);
 }
+
+.logo {
+  height: 3.25rem;
+}
+
+.search {
+  &__button-icon {
+    $size: 2rem;
+    height: $size;
+    width: $size;
+  }
+}
+
+.user-navigation {
+  &__icon {
+    $size: 2.25rem;
+    height: $size;
+    width: $size;
+  }
+
+  &__user-img {
+    $size: 3.75rem;
+    height: $size;
+    width: $size;
+    border-radius: 50%;
+  }
+}
 </style>
