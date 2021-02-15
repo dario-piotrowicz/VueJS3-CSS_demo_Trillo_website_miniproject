@@ -14,13 +14,13 @@
         <svg class="user-navigation__icon">
           <use xlink:href="#icon-bookmark"></use>
         </svg>
-        <div class="user-navigation__notifications">7</div>
+        <span class="user-navigation__notifications">7</span>
       </div>
       <div class="user-navigation__item-wapper">
         <svg class="user-navigation__icon">
           <use xlink:href="#icon-chat"></use>
         </svg>
-        <div class="user-navigation__notifications">13</div>
+        <span class="user-navigation__notifications">13</span>
       </div>
       <div class="user-navigation__item-wrapper">
         <div class="user-navigation__user">
@@ -41,13 +41,19 @@
   height: 7rem;
   background-color: #fff;
   border-bottom: var(--color-gray-lighter);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
   height: 3.25rem;
+  margin-left: 3rem;
 }
 
 .search {
+  flex: 0 0 40%;
+
   &__button-icon {
     $size: 2rem;
     height: $size;
@@ -56,6 +62,9 @@
 }
 
 .user-navigation {
+  display: flex;
+  align-items: center;
+
   &__icon {
     $size: 2.25rem;
     height: $size;
