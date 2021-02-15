@@ -38,6 +38,7 @@
 
 <style lang="scss" scoped>
 .header {
+  font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
   border-bottom: var(--color-gray-lighter);
@@ -53,11 +54,54 @@
 
 .search {
   flex: 0 0 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__input {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: var(--color-gray-lighter);
+    border: none;
+    border-radius: 50px;
+    padding: 0.7rem 2rem;
+    outline: none;
+    width: 90%;
+    transition: width 0.2s, background-color 0.2s, color 0.2s;
+    margin-right: -3.25rem;
+
+    &:focus {
+      width: 100%;
+      background-color: var(--color-gray-light);
+    }
+
+    &::placeholder {
+      font-weight: 100;
+      color: var(--color-gray);
+    }
+  }
+
+  &__button {
+    background-color: var(--color-gray-lighter);
+    border: none;
+    outline: none;
+    transition: transform 0.05s;
+
+    &:active {
+      transform: translateY(2px);
+    }
+  }
+
+  &__input + &__button {
+    background-color: var(--color-gray-light);
+  }
 
   &__button-icon {
     $size: 2rem;
     height: $size;
     width: $size;
+    fill: var(--color-gray-dark);
   }
 }
 
