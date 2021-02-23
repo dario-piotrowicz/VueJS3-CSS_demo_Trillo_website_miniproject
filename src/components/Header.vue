@@ -16,21 +16,19 @@
         </svg>
         <span class="user-navigation__notifications">7</span>
       </div>
-      <div class="user-navigation__item-wapper">
+      <div class="user-navigation__item-wrapper">
         <svg class="user-navigation__icon">
           <use xlink:href="#icon-chat"></use>
         </svg>
         <span class="user-navigation__notifications">13</span>
       </div>
       <div class="user-navigation__item-wrapper">
-        <div class="user-navigation__user">
-          <img
-            src="../assets/img/user.jpg"
-            alt="user profile picture"
-            class="user-navigation__user-img"
-          />
-          <span class="user-navigation__user-name">Dario</span>
-        </div>
+        <img
+          src="../assets/img/user.jpg"
+          alt="user profile picture"
+          class="user-navigation__user-img"
+        />
+        <span class="user-navigation__user-name">Dario</span>
       </div>
     </nav>
   </header>
@@ -49,7 +47,7 @@
 
 .logo {
   height: 3.25rem;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 
 .search {
@@ -106,13 +104,44 @@
 }
 
 .user-navigation {
+  align-self: stretch;
   display: flex;
   align-items: center;
+
+  &__item-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+
+    &:hover {
+      background-color: var(--color-gray-light);
+    }
+  }
 
   &__icon {
     $size: 2.25rem;
     height: $size;
     width: $size;
+    fill: var(--color-gray-darker);
+  }
+
+  &__notifications {
+    font-size: 0.8rem;
+    $size: 1.75rem;
+    height: $size;
+    width: $size;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    color: #fff;
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__user-img {
@@ -120,6 +149,7 @@
     height: $size;
     width: $size;
     border-radius: 50%;
+    margin-right: 1rem;
   }
 }
 </style>
