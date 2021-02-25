@@ -50,10 +50,29 @@
 }
 
 .side-nav {
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 3.5rem;
+
+  &__link {
+    &:link,
+    &:visited {
+      color: var(--color-gray-lightest);
+      text-decoration: none;
+      text-transform: uppercase;
+      display: block;
+      padding: 1.5rem 3rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+
   &__icon {
     $size: 1.75rem;
     width: $size;
     height: $size;
+    margin-right: 2rem;
+    fill: currentColor;
   }
 }
 
