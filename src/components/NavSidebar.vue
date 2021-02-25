@@ -1,7 +1,7 @@
 <template>
   <nav class="sidebar">
     <ul class="side-nav">
-      <li class="side-nav__item">
+      <li class="side-nav__item side-nav__item--active">
         <a href="#" class="side-nav__link">
           <svg class="side-nav__icon">
             <use xlink:href="#icon-home"></use>
@@ -74,7 +74,8 @@
         background-color 0.1s;
     }
 
-    &:hover::before {
+    &:hover::before,
+    &--active::before {
       transform: scaleY(1);
       width: 100%;
     }
