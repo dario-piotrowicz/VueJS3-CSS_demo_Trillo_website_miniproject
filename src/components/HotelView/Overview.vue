@@ -36,6 +36,9 @@
   display: flex;
 
   &__stars {
+    /* this with margin-right auto is a useful
+    trick that can be used with flex to create
+    empty space between two elements */
     margin-right: auto;
   }
 
