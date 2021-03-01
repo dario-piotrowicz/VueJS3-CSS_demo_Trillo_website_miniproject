@@ -1,15 +1,18 @@
 <template>
   <main class="hotel-view">
     <gallery></gallery>
+    <overview></overview>
   </main>
 </template>
 
 <script>
 import Gallery from "./Gallery";
+import Overview from "./Overview";
 
 export default {
   components: {
-    gallery: Gallery
+    gallery: Gallery,
+    overview: Overview
   }
 };
 </script>
