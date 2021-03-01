@@ -31,4 +31,16 @@
   </div>
 </template>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.overview {
+  &__icon {
+    &-star,
+    &-location {
+      $size: 1.75rem;
+      width: $size;
+      height: $size;
+      fill: var(--color-primary);
+    }
+  }
+}
+</style>
