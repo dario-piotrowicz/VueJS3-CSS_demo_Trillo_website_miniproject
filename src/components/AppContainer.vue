@@ -11,7 +11,7 @@
 <script>
 import Header from "./Header";
 import NavSidebar from "./NavSidebar";
-import HotelView from "./HotelView";
+import HotelView from "./HotelView/HotelView";
 
 export default {
   components: {
