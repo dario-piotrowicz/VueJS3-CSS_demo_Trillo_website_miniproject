@@ -28,7 +28,6 @@ export default {
   margin: 8rem auto;
   background-color: var(--color-gray-lightest);
   box-shadow: 0 2rem 6rem transparentize(#000, 0.7);
-  min-height: 50rem;
 }
 
 .content {
