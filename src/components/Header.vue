@@ -39,7 +39,7 @@
   font-size: 1.4rem;
   height: 7rem;
   background-color: #fff;
-  border-bottom: var(--color-gray-lighter);
+  border-bottom: 1px solid var(--color-gray-lighter);
   display: flex;
   justify-content: space-between;
   align-items: center;
