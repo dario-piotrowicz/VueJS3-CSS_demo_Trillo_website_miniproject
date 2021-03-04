@@ -62,6 +62,23 @@
       height: $size;
       fill: var(--color-primary);
     }
+
+    &-location {
+      margin-right: 0.5rem;
+    }
+  }
+
+  &__location {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+
+    &-name {
+      color: var(--color-primary);
+      border-bottom: 1px solid currentColor;
+      padding: 2px;
+      display: inline-block;
+    }
   }
 }
 </style>
