@@ -34,6 +34,7 @@
 <style lang="scss" scoped>
 .overview {
   display: flex;
+  border-bottom: 1px solid var(--color-gray-lighter);
 
   &__stars {
     /* this with margin-right auto is a useful
