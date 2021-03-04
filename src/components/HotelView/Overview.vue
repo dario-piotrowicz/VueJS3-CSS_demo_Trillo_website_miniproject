@@ -80,5 +80,29 @@
       display: inline-block;
     }
   }
+
+  &__rating {
+    color: #fff;
+    background-color: var(--color-primary);
+    margin-left: 3rem;
+    align-self: stretch;
+    padding: 0 2.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &-average {
+      font-size: 2.25rem;
+      font-weight: 300;
+      margin-top: -3px;
+      margin-bottom: -3px;
+    }
+
+    &-count {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+    }
+  }
 }
 </style>
