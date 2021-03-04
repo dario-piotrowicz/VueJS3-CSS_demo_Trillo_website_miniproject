@@ -34,6 +34,7 @@
 <style lang="scss" scoped>
 .overview {
   display: flex;
+  align-items: center;
   border-bottom: 1px solid var(--color-gray-lighter);
 
   &__stars {
