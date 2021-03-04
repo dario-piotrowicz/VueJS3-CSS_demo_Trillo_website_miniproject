@@ -50,6 +50,8 @@
     trick that can be used with flex to create
     empty space between two elements */
     margin-right: auto;
+
+    display: flex;
   }
 
   &__icon {
