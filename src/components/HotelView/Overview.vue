@@ -37,6 +37,14 @@
   align-items: center;
   border-bottom: 1px solid var(--color-gray-lighter);
 
+  &__heading {
+    font-size: 2.25rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 1.5rem 3rem;
+  }
+
   &__stars {
     /* this with margin-right auto is a useful
     trick that can be used with flex to create
