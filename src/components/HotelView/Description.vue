@@ -11,14 +11,70 @@
       nostrum, similique earum culpa vitae commodi nam ratione cum autem.
     </p>
     <ul class="hotel-description__list">
-      <li class="hotel-description__list-item">Close to the beach</li>
-      <li class="hotel-description__list-item">Breakfast included</li>
-      <li class="hotel-description__list-item">Free airport shuttle</li>
-      <li class="hotel-description__list-item">Free wifi in all rooms</li>
-      <li class="hotel-description__list-item">Air conditioning and heating</li>
-      <li class="hotel-description__list-item">Petes allowed</li>
-      <li class="hotel-description__list-item">We speak only english</li>
-      <li class="hotel-description__list-item">Perfect for families</li>
+      <li class="hotel-description__list-item">
+        <svg class="hotel-description__list-item-icon">
+          <use xlink:href="#icon-chevron-thin-right"></use>
+        </svg>
+        <span class="hotel-description__list-item-text">
+          Close to the beach
+        </span>
+      </li>
+      <li class="hotel-description__list-item">
+        <svg class="hotel-description__list-item-icon">
+          <use xlink:href="#icon-chevron-thin-right"></use>
+        </svg>
+        <span class="hotel-description__list-item-text">
+          Breakfast included
+        </span>
+      </li>
+      <li class="hotel-description__list-item">
+        <svg class="hotel-description__list-item-icon">
+          <use xlink:href="#icon-chevron-thin-right"></use>
+        </svg>
+        <span class="hotel-description__list-item-text">
+          Free airport shuttle
+        </span>
+      </li>
+      <li class="hotel-description__list-item">
+        <svg class="hotel-description__list-item-icon">
+          <use xlink:href="#icon-chevron-thin-right"></use>
+        </svg>
+        <span class="hotel-description__list-item-text">
+          Free wifi in all rooms
+        </span>
+      </li>
+      <li class="hotel-description__list-item">
+        <svg class="hotel-description__list-item-icon">
+          <use xlink:href="#icon-chevron-thin-right"></use>
+        </svg>
+        <span class="hotel-description__list-item-text">
+          Air conditioning and heating
+        </span>
+      </li>
+      <li class="hotel-description__list-item">
+        <svg class="hotel-description__list-item-icon">
+          <use xlink:href="#icon-chevron-thin-right"></use>
+        </svg>
+        <span class="hotel-description__list-item-text">
+          Petes allowed
+        </span>
+      </li>
+      <li class="hotel-description__list-item">
+        <svg class="hotel-description__list-item-icon">
+          <use xlink:href="#icon-chevron-thin-right"></use>
+        </svg>
+        <span class="hotel-description__list-item-text">
+          We speak only english
+        </span>
+      </li>
+      <li class="hotel-description__list-item">
+        <svg class="hotel-description__list-item-icon">
+          <use xlink:href="#icon-chevron-thin-right"></use>
+        </svg>
+        <span class="hotel-description__list-item-text">
+          Perfect for families
+        </span>
+      </li>
     </ul>
     <div class="hotel-description__recommendations">
       <p class="hote-description__recommendations-counter">
@@ -54,5 +110,34 @@
   box-shadow: 0 2rem 5rem transparentize(#000, 0.94);
   padding: 3rem;
   font-size: 1.4rem;
+
+  &__paragraph {
+    &:not(:last-of-type) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    margin: 3rem 0;
+    padding: 3rem 0;
+    border-top: 1px solid var(--color-gray-lighter);
+    border-bottom: 1px solid var(--color-gray-lighter);
+    display: flex;
+    flex-wrap: wrap;
+
+    &-item {
+      flex: 0 0 50%;
+      margin-bottom: 0.7rem;
+
+      &-icon {
+        $size: 1rem;
+        width: $size;
+        height: $size;
+        margin-right: 0.7rem;
+        fill: var(--color-primary);
+      }
+    }
+  }
 }
 </style>
