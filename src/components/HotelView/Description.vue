@@ -139,5 +139,28 @@
       }
     }
   }
+
+  &__recommendations {
+    font-size: 1.3rem;
+    color: var(--color-gray-dark);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &-friend {
+      &-img {
+        box-sizing: content-box;
+        $size: 4rem;
+        width: $size;
+        height: $size;
+        border-radius: 50%;
+        border: 3px solid #fff;
+
+        &:not(:last-child) {
+          margin-right: -1.5rem;
+        }
+      }
+    }
+  }
 }
 </style>
