@@ -9,6 +9,10 @@
       :date="review.date"
       :score="review.score"
     ></review>
+    <button class="hotel-reviews__show-all-btn">
+      Show all
+      <span class="hotel-reviews__show-all-btn-arrow">&rarr;</span>
+    </button>
   </div>
 </template>
 
@@ -49,5 +53,30 @@ export default {
 
 <style lang="scss" scoped>
 .hotel-reviews {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__show-all-btn {
+    background-color: transparent;
+    color: var(--color-primary);
+    border: none;
+    border-bottom: 1px solid currentColor;
+    padding: 2px;
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+
+    &-arrow {
+      line-height: 1;
+      font-size: 2.5rem;
+      margin-left: 3px;
+      transition: margin-left 0.2s;
+    }
+
+    &:hover &-arrow {
+      margin-left: 8px;
+    }
+  }
 }
 </style>
