@@ -7,7 +7,7 @@
         <description></description>
       </div>
       <div class="hotel-reviews-wrapper">
-        reviews
+        <reviews></reviews>
       </div>
     </div>
   </main>
@@ -17,12 +17,14 @@
 import Gallery from "./Gallery";
 import Overview from "./Overview";
 import Description from "./Description";
+import Reviews from "./Reviews";
 
 export default {
   components: {
     gallery: Gallery,
     overview: Overview,
-    description: Description
+    description: Description,
+    reviews: Reviews
   }
 };
 </script>
