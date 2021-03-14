@@ -9,6 +9,14 @@
       date="Feb 23rd, 2020"
       score="7.8"
     ></review>
+    <review
+      text="Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      Voluptatum dicta doloremque pariatur accusantium. Incidunt, eius!"
+      user-name="Mary Thomas"
+      :user-pic-src="require('../../assets/img/user-2.jpg')"
+      date="Sept 13th, 2020"
+      score="9.3"
+    ></review>
   </div>
 </template>
 
