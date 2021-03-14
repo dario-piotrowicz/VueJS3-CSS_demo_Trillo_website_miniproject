@@ -1,28 +1,32 @@
 <template>
   <div class="hotel-review">
     <blockquote class="hotel-review__text">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis culpa
-      molestias impedit incidunt perspiciatis illum sit qui assumenda ipsum
-      corporis.
+      {{ text }}
     </blockquote>
     <div class="hotel-review__user">
       <img
-        src="../../assets/img/user-1.jpg"
-        alt="user 1 picture"
+        :src="userPicSrc"
+        :alt="`Picture of ${userName}`"
         class="hotel-review__user-picture"
       />
       <div class="hotel-review__user-details">
         <p class="hotel-review__user-name">
-          Nick Smith
+          {{ userName }}
         </p>
         <p class="hotel-review__user-date">
-          Feb 23rd, 2020
+          {{ date }}
         </p>
       </div>
-      <div class="hotel-review__user-rating">7.8</div>
+      <div class="hotel-review__user-rating">{{ score }}</div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: ["text", "userName", "userPicSrc", "date", "score"]
+};
+</script>
 
 <style lang="scss" scoped>
 .hotel-review {
