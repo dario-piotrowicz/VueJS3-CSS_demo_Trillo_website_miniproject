@@ -66,12 +66,19 @@ export default {
     display: inline-block;
     outline: none;
     cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
 
     &-arrow {
-      line-height: 1;
+      line-height: 0;
+      margin-bottom: 8px;
       font-size: 2.5rem;
       margin-left: 3px;
       transition: margin-left 0.2s;
+    }
+
+    &:hover {
+      box-shadow: 0 1rem 2rem transparentize(#000, 0.85);
+      transform: scale(1.05);
     }
 
     &:hover &-arrow {
