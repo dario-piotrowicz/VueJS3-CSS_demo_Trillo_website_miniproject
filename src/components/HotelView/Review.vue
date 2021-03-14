@@ -35,8 +35,12 @@ export default {
   padding: 3rem;
   margin-bottom: 3.5rem;
   font-size: 1.4rem;
+  position: relative;
+  overflow: hidden;
 
   &__text {
+    position: relative;
+    z-index: 3;
     margin-bottom: 2rem;
   }
 
@@ -73,6 +77,18 @@ export default {
       font-size: 2.2rem;
       font-weight: 300;
     }
+  }
+
+  &::before {
+    content: "\201C";
+    position: absolute;
+    top: -3.2rem;
+    left: -0.9rem;
+    font-size: 20rem;
+    font-family: sans-serif;
+    line-height: 1;
+    color: var(--color-gray-lighter);
+    z-index: 2;
   }
 }
 </style>
