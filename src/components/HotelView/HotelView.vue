@@ -10,6 +10,7 @@
         <reviews></reviews>
       </div>
     </div>
+    <cta></cta>
   </main>
 </template>
 
@@ -18,13 +19,15 @@ import Gallery from "./Gallery";
 import Overview from "./Overview";
 import Description from "./Description";
 import Reviews from "./Reviews";
+import CTA from "./CTA";
 
 export default {
   components: {
     gallery: Gallery,
     overview: Overview,
     description: Description,
-    reviews: Reviews
+    reviews: Reviews,
+    cta: CTA
   }
 };
 </script>
