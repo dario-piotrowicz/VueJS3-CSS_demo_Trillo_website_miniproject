@@ -28,6 +28,11 @@ export default {
   margin: 8rem auto;
   background-color: var(--color-gray-lightest);
   box-shadow: 0 2rem 6rem transparentize(#000, 0.7);
+
+  @media only screen and (max-width: 1285px) {
+    max-width: unset;
+    margin: 0;
+  }
 }
 
 .content {
