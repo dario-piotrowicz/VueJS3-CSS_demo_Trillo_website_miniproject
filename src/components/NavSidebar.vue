@@ -54,11 +54,24 @@
   list-style: none;
   margin-top: 3.5rem;
 
+  @media only screen and (max-width: 930px) {
+    display: flex;
+    margin: 0;
+  }
+
   &__item {
     position: relative;
 
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+    }
+
+    @media only screen and (max-width: 930px) {
+      flex: 1;
+
+      &:not(:last-child) {
+        margin-bottom: 0;
+      }
     }
 
     &::before {
@@ -96,6 +109,11 @@
       display: flex;
       align-items: center;
       position: relative;
+
+      @media only screen and (max-width: 930px) {
+        justify-content: center;
+        padding: 2rem;
+      }
     }
   }
 
@@ -113,5 +131,9 @@
   text-align: center;
   padding: 2.5rem;
   color: var(--color-gray-medium);
+
+  @media only screen and (max-width: 930px) {
+    display: none;
+  }
 }
 </style>
