@@ -151,6 +151,10 @@
     align-items: center;
     justify-content: space-between;
 
+    &-friends {
+      display: flex;
+    }
+
     &-friend {
       &-img {
         box-sizing: content-box;
