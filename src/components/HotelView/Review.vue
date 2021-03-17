@@ -38,6 +38,11 @@ export default {
   position: relative;
   overflow: hidden;
 
+  @media only screen and (max-width: 930px) {
+    padding: 2rem;
+    margin-bottom: 3rem;
+  }
+
   &__text {
     position: relative;
     z-index: 3;

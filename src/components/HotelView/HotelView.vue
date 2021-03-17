@@ -42,11 +42,19 @@ export default {
     padding: 4.5rem;
     background-color: var(--color-gray-lightest);
     border-bottom: 1px solid var(--color-gray-lighter);
+
+    @media only screen and (max-width: 930px) {
+      padding: 2rem;
+    }
   }
 
   .hotel-description-wrapper {
     flex: 0 0 60%;
     margin-right: 4.5rem;
+
+    @media only screen and (max-width: 930px) {
+      margin-right: 2rem;
+    }
   }
 
   .hotel-reviews-wrapper {

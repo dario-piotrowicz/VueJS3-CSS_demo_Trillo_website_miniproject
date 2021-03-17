@@ -111,6 +111,10 @@
   padding: 3rem;
   font-size: 1.4rem;
 
+  @media only screen and (max-width: 930px) {
+    padding: 2rem;
+  }
+
   &__paragraph {
     &:not(:last-of-type) {
       margin-bottom: 2rem;
