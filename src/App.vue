@@ -31,6 +31,10 @@ html {
     and 10 is 62.5 percent of 16 ( 10/16 * 100 = 62.5 )
   */
   font-size: 62.5%;
+
+  @media only screen and (max-width: 1150px) {
+    font-size: 50%;
+  }
 }
 
 * {
