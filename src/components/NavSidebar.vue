@@ -114,6 +114,10 @@
         justify-content: center;
         padding: 2rem;
       }
+      @media only screen and (max-width: 600px) {
+        flex-direction: column;
+        padding: 1rem 0.5rem;
+      }
     }
   }
 
@@ -123,6 +127,14 @@
     height: $size;
     margin-right: 2rem;
     fill: currentColor;
+
+    @media only screen and (max-width: 600px) {
+      margin-right: 0;
+      $size: 1.5rem;
+      width: $size;
+      height: $size;
+      margin-bottom: 5px;
+    }
   }
 }
 
