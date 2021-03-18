@@ -163,6 +163,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 530px) {
+      top: 0;
+    }
   }
 
   &__user-img {
