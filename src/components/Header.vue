@@ -43,6 +43,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media only screen and (max-width: 530px) {
+    flex-wrap: wrap;
+    height: 11rem;
+    align-content: space-around;
+  }
 }
 
 .logo {
@@ -55,6 +61,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media only screen and (max-width: 530px) {
+    order: 1;
+    flex: 0 0 100%;
+    background-color: var(--color-gray-lighter);
+  }
 
   &__input {
     font-family: inherit;
@@ -72,6 +84,11 @@
     &:focus {
       width: 100%;
       background-color: var(--color-gray-light);
+
+      @media only screen and (max-width: 530px) {
+        padding-left: 5px;
+        background-color: inherit;
+      }
     }
 
     &::placeholder {
@@ -93,6 +110,10 @@
 
   &__input + &__button {
     background-color: var(--color-gray-light);
+    @media only screen and (max-width: 530px) {
+      background-color: inherit;
+      padding-right: 5px;
+    }
   }
 
   &__button-icon {
