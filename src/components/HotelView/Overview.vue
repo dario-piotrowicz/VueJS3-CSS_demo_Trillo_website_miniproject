@@ -43,6 +43,11 @@
     text-transform: uppercase;
     letter-spacing: 1px;
     padding: 1.5rem 3rem;
+
+    @media only screen and (max-width: 600px) {
+      font-size: 1.8rem;
+      padding: 1.25rem 2rem;
+    }
   }
 
   &__stars {
@@ -92,16 +97,28 @@
     align-items: center;
     justify-content: center;
 
+    @media only screen and (max-width: 600px) {
+      padding: 0 1.5rem;
+    }
+
     &-average {
       font-size: 2.25rem;
       font-weight: 300;
       margin-top: -3px;
       margin-bottom: -3px;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 1.8rem;
+      }
     }
 
     &-count {
       font-size: 0.8rem;
       text-transform: uppercase;
+
+      @media only screen and (max-width: 600px) {
+        font-size: 0.5rem;
+      }
     }
   }
 }
