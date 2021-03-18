@@ -46,6 +46,9 @@ export default {
     @media only screen and (max-width: 930px) {
       padding: 2rem;
     }
+    @media only screen and (max-width: 600px) {
+      flex-direction: column;
+    }
   }
 
   .hotel-description-wrapper {
@@ -55,10 +58,18 @@ export default {
     @media only screen and (max-width: 930px) {
       margin-right: 2rem;
     }
+    @media only screen and (max-width: 600px) {
+      margin-right: 0;
+      margin-bottom: 3rem;
+    }
   }
 
   .hotel-reviews-wrapper {
     flex: 1;
+
+    @media only screen and (max-width: 600px) {
+      margin-bottom: 3rem;
+    }
   }
 }
 </style>
